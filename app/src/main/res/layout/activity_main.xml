@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="820dp"
+        android:background="@drawable/bb1" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="300dp"
+        android:layout_height="92dp"
+        android:background="@drawable/mxlogo2" />
+
+    <Button
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E97164"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/about"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="About Us" />
+
+    <Button
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E97164"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/music"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/about"
+        android:text="Music" />
+
+    <Button
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E97164"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/gallery"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/music"
+        android:text="Gallery" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_below="@id/about"
+        android:layout_marginTop="70dp"
+        android:layout_height="300dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/a1" />
+
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/a2" />
+
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/a3" />
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/a4" />
+
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/hsv"
+        android:text="MxPlayer Top Shows"
+        android:layout_marginTop="20dp"
+        android:textSize="27dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#E97164"
+        android:layout_marginLeft="70dp"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>
